@@ -1,15 +1,24 @@
-import { Text, View } from "react-native";
+import SearchInput from "@/components/SearchInput";
+import { COLORS } from '@/styles';
+import { StyleSheet, Text, View } from "react-native";
 
 export default function Index() {
   return (
-    <View
-      style={{
-        flex: 1,
-        justifyContent: "center",
-        alignItems: "center",
-      }}
-    >
-      <Text>Kedai Kovie</Text>
+    <View>
+      <Text
+        style={styles.titleText}
+      >Kedai Kovie</Text>
+
+      <SearchInput />
     </View>
   );
-}
+};
+
+const styles = StyleSheet.create({
+  titleText: {
+    fontSize: 42,
+    textAlign: 'center',
+    color: COLORS.red,
+    padding: 14
+  }
+})
