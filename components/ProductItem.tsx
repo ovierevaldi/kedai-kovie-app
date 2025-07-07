@@ -28,7 +28,9 @@ const ProductItem = (product: ProductProp) => {
         <View
           style={{flex: 4}}
         >
-          <BuyButton />
+          <BuyButton 
+            product_name={product.title}
+          />
         </View>
       </View>
     </View>
