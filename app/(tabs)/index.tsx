@@ -1,7 +1,7 @@
 import ProductItem, { ProductProp } from "@/components/ProductItem";
 import SearchInput from "@/components/SearchInput";
-import { COLORS } from "@/styles";
-import { FlatList, StyleSheet, Text, View } from "react-native";
+import TitleText from "@/components/TitleText";
+import { FlatList, StyleSheet, View } from "react-native";
 
 const coffeeProducts: ProductProp[] = [
   { id: 1, title: 'Kopi Tubruk', price: 15000 },
@@ -38,7 +38,9 @@ export default function Index() {
   return (
     <View>
       <View style={{ marginTop: 20, marginBottom: 10 }}>
-        <Text style={styles.titleText}>Kedai Kovie</Text>
+        <TitleText 
+          title='Kedai Kovie'
+        />
         <SearchInput />
       </View>
 
@@ -58,12 +60,6 @@ export default function Index() {
 };
 
 const styles = StyleSheet.create({
-  titleText: {
-    fontSize: 42,
-    textAlign: 'center',
-    color: COLORS.red,
-    padding: 14
-  },
   product: {
     margin: 10
   }

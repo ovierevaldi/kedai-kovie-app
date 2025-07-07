@@ -19,6 +19,25 @@ export default function TabLayout(){
           tabBarIcon: ({ color }) => <FontAwesome size={28} name="home" color={color} />,
         }}
       />
+
+      
+      <Tabs.Screen 
+        name="redirectPayment"
+        options={{
+          title: 'zzz',
+          href: null,
+          tabBarIcon: ({ color }) => <FontAwesome size={28} name="home" color={color} />,
+        }}
+      />
+
+       <Tabs.Screen 
+        name="RedirectPayment"
+        options={{
+          title: 'zzz',
+          href: null,
+          tabBarIcon: ({ color }) => <FontAwesome size={28} name="home" color={color} />,
+        }}
+      />
     </Tabs>
   )
 }

@@ -8,5 +8,15 @@ function formatPrice(value: number){
   return value.toString();
 };
 
-export { formatPrice };
+function formatPriceForBill(value: number){
+  return 'Rp. ' + value.toLocaleString('id-ID', {
+    minimumFractionDigits: 2
+  })
+};
+
+function formatAmount(amount: number){
+  return amount.toString()+'x'
+}
+
+export { formatAmount, formatPrice, formatPriceForBill };
 
